@@ -75,7 +75,7 @@
         </logger>
 
         <logger name="org.hibernate.SQL" additivity="false">
-            <level value="trace"/>
+            <level value="debug"/>
             <appender-ref ref="Console"/>
         </logger>
 
