@@ -57,10 +57,7 @@
         <!--</Logger>-->
 
         <!-- 第三方日志系统 -->
-        <logger name="org.springframework.core" level="info"/>
-        <logger name="org.springframework.beans" level="info"/>
-        <logger name="org.springframework.context" level="info"/>
-        <logger name="org.springframework.web" level="info"/>
+        <logger name="org.springframework" level="info"/>
         <!--<logger name="org.hibernate" level="debug" additivity="false">-->
         <!--<appender-ref ref="Console"/>-->
         <!--</logger>-->
@@ -69,17 +66,17 @@
               <priority value="TRACE"/>
           </category>-->
 
-        <logger name="org.hibernate.type" additivity="false">
-            <level value="TRACE"/>
-            <appender-ref ref="Console"/>
-        </logger>
+        <!--<logger name="org.hibernate.type" additivity="false">-->
+            <!--<level value="TRACE"/>-->
+            <!--<appender-ref ref="Console"/>-->
+        <!--</logger>-->
 
-        <logger name="org.hibernate.SQL" additivity="false">
-            <level value="debug"/>
-            <appender-ref ref="Console"/>
-        </logger>
+        <!--<logger name="org.hibernate.SQL" additivity="false">-->
+            <!--<level value="debug"/>-->
+            <!--<appender-ref ref="Console"/>-->
+        <!--</logger>-->
 
-        <logger name="org.hibernate.jdbc" additivity="false">
+        <logger name="org.hibernate.type.descriptor.sql.BasicBinder" additivity="false">
             <level value="trace"/>
             <appender-ref ref="Console"/>
         </logger>
