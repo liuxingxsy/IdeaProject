@@ -76,9 +76,8 @@
             <!--<appender-ref ref="Console"/>-->
         <!--</logger>-->
 
-        <logger name="org.hibernate.type.descriptor.sql.BasicBinder" additivity="false">
-            <level value="trace"/>
-            <appender-ref ref="Console"/>
+        <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="trace" additivity="false">
+            <AppenderRef ref="Console"/>
         </logger>
         <!-- 配置日志的根节点 -->
         <root level="error">
