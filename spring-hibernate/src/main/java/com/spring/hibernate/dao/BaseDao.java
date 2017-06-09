@@ -1,5 +1,7 @@
 package com.spring.hibernate.dao;
 
+import com.spring.hibernate.common.bean.Page;
+
 import java.util.List;
 
 /**
@@ -17,4 +19,5 @@ public interface BaseDao<T> {
     List<T> queryAll();
 
     List<T> findListByExample(T object);
+    Page<T> findListForPage(String hql,Page<T> page);
 }
